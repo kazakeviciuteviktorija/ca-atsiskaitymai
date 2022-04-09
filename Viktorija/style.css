@@ -31,6 +31,44 @@ footer {
   padding-bottom: 2rem;
 }
 
+.section1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.section1 :first-child {
+  -webkit-box-flex: 60%;
+      -ms-flex: 60%;
+          flex: 60%;
+}
+
+.section1 :last-child {
+  -webkit-box-flex: 40%;
+      -ms-flex: 40%;
+          flex: 40%;
+}
+
+button {
+  border-radius: 10em;
+  padding: 0.5rem 1.5rem;
+  border: double 2px transparent;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white)), -webkit-gradient(linear, left top, right top, from(#e25dba), color-stop(#eb420f), to(#cfa709));
+  background-image: linear-gradient(white, white), linear-gradient(to right, #e25dba, #eb420f, #cfa709);
+}
+
 a {
   text-decoration: none;
   -ms-flex-pack: distribute;
