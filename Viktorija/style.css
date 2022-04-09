@@ -5,4 +5,12 @@ footer {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+
+.row {
+  display: inline;
+}
+
+.color-block {
+  background-color: chocolate;
+}
 /*# sourceMappingURL=style.css.map */
