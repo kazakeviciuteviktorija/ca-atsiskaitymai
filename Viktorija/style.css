@@ -13,4 +13,8 @@ footer {
 .color-block {
   background-color: chocolate;
 }
+
+table {
+  border-collapse: collapse;
+}
 /*# sourceMappingURL=style.css.map */
