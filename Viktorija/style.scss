@@ -1,3 +1,4 @@
+
 body {
     background-color: rgb(252, 250, 250);
 }
@@ -20,7 +21,7 @@ footer {
     padding-bottom: 2rem;
 }
 
-.section1 {
+.section1, .icons{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -35,6 +36,10 @@ footer {
 .section1 :last-child {
     flex: 40%;
 }
+.icons nav {
+    color: rgb(130, 127, 127);
+}
+
 button {
     border-radius: 10em;
     padding: 0.5rem 1.5rem;
@@ -66,18 +71,32 @@ padding: 2rem 0 1rem 1rem;
 
 table {
     border-collapse: collapse;
-}
+    table-layout: fixed;
+    }
 
-img {
-    size: 100%;
-}
-
+    
+    .eth {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
 .background-grey {
     background-color: rgb(233, 231, 231);
-    border-radius: 0.35em;
+    border-radius: 0.5em;
     border: solid 1px rgba(0, 0, 0, 0.15);
     padding: 0 0;
         }
+
+.background-grey img {
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    width: 100%;
+}     
+
+.currency {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
 
 .container {
         display: flex;
@@ -85,3 +104,41 @@ img {
        align-items: stretch;
         justify-content: space-between;
              }
+
+             @media screen and (max-width: 736px) {
+                .header {
+                     display: none;
+                 }
+                 .first-row {
+                    display: flex;
+                    flex-wrap: wrap;
+                   align-items: stretch;
+                    justify-content: space-between;
+                         }
+
+             #headerToggle {
+                display: flex;
+                align-items: center;
+                justify-content: right;
+                height: 2.25em;
+                width: 2.25em;
+                left: 0;
+                top: 0;
+                position: static;
+              }
+              .toggle > div {
+                width: 15px;
+                height: 3px;
+                background-color: rgba(93, 90, 90, 0.784);
+                margin: 2px 0;
+                              }
+             .section1 {
+                                display: flex;
+                                flex-wrap: nowrap;
+                                justify-content: space-between;
+                                align-items: center;
+                                padding-top: 1rem;
+                                padding-bottom: 1rem;
+                            }
+          
+ }
